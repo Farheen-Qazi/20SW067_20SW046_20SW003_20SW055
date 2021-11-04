@@ -34,7 +34,7 @@ public class Admin extends MouseAdapter implements ActionListener{
 	public Admin() {
 		
 		
-    ImageIcon u = new ImageIcon("criminal-record.png");
+    ImageIcon u = new ImageIcon(getClass().getClassLoader().getResource("criminal-record.png"));
 	item1 = new JLabel(u);
 	item1.setLayout(new BorderLayout());
     view= new JButton("View Record");
@@ -60,7 +60,7 @@ public class Admin extends MouseAdapter implements ActionListener{
 	 
     item1.setOpaque(true);
     
-    ImageIcon c = new ImageIcon("update (1).png");
+    ImageIcon c = new ImageIcon(getClass().getClassLoader().getResource("update (1).png"));
    
 	item2 = new JLabel(c);
     
@@ -84,7 +84,7 @@ public class Admin extends MouseAdapter implements ActionListener{
 	item2.setOpaque(true);
 	
 	
-	ImageIcon d = new ImageIcon("trash.png");
+	ImageIcon d = new ImageIcon(getClass().getClassLoader().getResource("trash.png"));
 	item3 = new JLabel(d);
 	item3.setLayout(new BorderLayout());
     delete= new JButton("delete");
@@ -152,7 +152,7 @@ public class Admin extends MouseAdapter implements ActionListener{
 	
 	heading = new JPanel();	
 	heading.setLayout(new BorderLayout());
-	ImageIcon img = new ImageIcon("newback.jpg");	
+	ImageIcon img = new ImageIcon(getClass().getClassLoader().getResource("newback.jpg"));	
 	background = new JLabel();
 
 	Image rimg = img.getImage();

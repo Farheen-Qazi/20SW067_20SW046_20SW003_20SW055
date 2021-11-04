@@ -77,7 +77,7 @@ public class Ticket extends Thread implements ActionListener{
 		
 		center_bottom.setPreferredSize(new Dimension(70,70));
 		
-		ImageIcon img = new ImageIcon("sr.png");
+		ImageIcon img = new ImageIcon(getClass().getClassLoader().getResource("sr.png"));
 		
 		btn = new JButton(img);
 		btn.setText("Search");
@@ -113,7 +113,7 @@ public class Ticket extends Thread implements ActionListener{
 		
 		center = new JPanel(new BorderLayout(0,10));
 		info = new JPanel(new BorderLayout());
-	     eye = new ImageIcon("cartoon-eyes.png");
+	     eye = new ImageIcon(getClass().getClassLoader().getResource("cartoon-eyes.png"));
 		
 	    hello = new JLabel("Hello user Please Enter your Number ");
 	   hello.setHorizontalAlignment(JLabel.CENTER);
@@ -311,7 +311,7 @@ public class Ticket extends Thread implements ActionListener{
 		    setrseat.setOpaque(true);
 		
 		
-		ImageIcon pic = new ImageIcon("smalltrain.png");
+		ImageIcon pic = new ImageIcon(getClass().getClassLoader().getResource("smalltrain.png"));
 		
 		right = new JLabel(" Ticket");
 		right.setIcon(pic);
@@ -333,7 +333,7 @@ public class Ticket extends Thread implements ActionListener{
 		right_panel.add(rseat);
 		right_panel.add(setrseat);
 		
-		ImageIcon b = new ImageIcon("barcodeset.png");
+		ImageIcon b = new ImageIcon(getClass().getClassLoader().getResource("barcodeset.png"));
 		bar1 = new JLabel(b);
 		bar1.setBounds(10,200,40,90);
 		
@@ -511,7 +511,7 @@ while(true) {
 	//after clicking search button count variable will be incremented from zero 
 	else if(count >= 1) {
 		
-		ImageIcon an = new ImageIcon("angry.png");
+		ImageIcon an = new ImageIcon(getClass().getClassLoader().getResource("angry.png"));
 		hello.setIcon(an);
 		hello.setText("Wrong number");
 		hello.setVisible(true);

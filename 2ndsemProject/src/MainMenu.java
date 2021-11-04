@@ -34,8 +34,8 @@ public class MainMenu extends MouseAdapter implements ActionListener{
 	
 		
 		
-	ImageIcon item1Image = new ImageIcon("train.png");
-	ImageIcon item2Image = new ImageIcon("guarantee.png");
+	ImageIcon item1Image = new ImageIcon(getClass().getClassLoader().getResource("train.png"));
+	ImageIcon item2Image = new ImageIcon(getClass().getClassLoader().getResource("guarantee.png"));
 	
 	
 	item1 = new JLabel();
@@ -117,7 +117,7 @@ public class MainMenu extends MouseAdapter implements ActionListener{
 	text.setHorizontalAlignment(JLabel.CENTER);
 	heading = new JPanel();	
 	heading.setLayout(new BorderLayout());
-	ImageIcon img = new ImageIcon("newback.jpg");	
+	ImageIcon img = new ImageIcon(getClass().getClassLoader().getResource("newback.jpg"));	
 	background = new JLabel();
 
 	Image rimg = img.getImage();

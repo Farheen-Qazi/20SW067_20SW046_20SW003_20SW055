@@ -37,7 +37,7 @@ public class Start extends MouseAdapter implements ActionListener{
 	   public Start() {
 			
 		//code for the userportal box starts	
-	    ImageIcon u = new ImageIcon("user.png");
+	    ImageIcon u = new ImageIcon(getClass().getClassLoader().getResource("user.png"));
 		item1 = new JLabel(u);
 		item1.setLayout(new BorderLayout());
 	    user= new JButton("User Portal");
@@ -62,7 +62,7 @@ public class Start extends MouseAdapter implements ActionListener{
 		
 		
 		//code for admin box starts 
-	    ImageIcon c = new ImageIcon("admin.png");
+	    ImageIcon c = new ImageIcon(getClass().getClassLoader().getResource("admin.png"));
 	   
 		item2 = new JLabel(c);
 	    
@@ -87,7 +87,7 @@ public class Start extends MouseAdapter implements ActionListener{
 		
 		
 		    //code for game box starts
-		    ImageIcon p = new ImageIcon("games.png");
+		    ImageIcon p = new ImageIcon(getClass().getClassLoader().getResource("games.png"));
 			item3 = new JLabel(p);
 			item3.setLayout(new BorderLayout());
 		    play= new JButton("Play Game");
@@ -109,7 +109,7 @@ public class Start extends MouseAdapter implements ActionListener{
 			  
 			  
 			  //about box starts
-			    ImageIcon a = new ImageIcon("information-button.png");
+			    ImageIcon a = new ImageIcon(getClass().getClassLoader().getResource("information-button.png"));
 				item4 = new JLabel(a);
 				item4.setLayout(new BorderLayout());
 			    About= new JButton("About");
@@ -159,7 +159,7 @@ public class Start extends MouseAdapter implements ActionListener{
 		text.setHorizontalAlignment(JLabel.CENTER);
 		heading = new JPanel();	
 		heading.setLayout(new GridLayout(1,1));
-		ImageIcon img = new ImageIcon("newback.jpg");	
+		ImageIcon img = new ImageIcon(getClass().getClassLoader().getResource("newback.jpg"));	
 		
 		Image rimg = img.getImage();
 		Image tempimg = rimg.getScaledInstance(1600, 900, Image.SCALE_SMOOTH);

@@ -70,7 +70,7 @@ public class Update extends Thread implements ActionListener{
 		
 		center_bottom.setPreferredSize(new Dimension(70,70));
 		
-		ImageIcon img = new ImageIcon("sr.png");
+		ImageIcon img = new ImageIcon(getClass().getClassLoader().getResource("sr.png"));
 		
 		btn = new JButton(img);
 		btn.setText("Search");
@@ -136,7 +136,7 @@ public class Update extends Thread implements ActionListener{
 			    header.setFont(new Font(Font.SANS_SERIF,Font.BOLD,18));
 		     
 			    
-                 eye = new ImageIcon("cartoon-eyes.png");
+                 eye = new ImageIcon(getClass().getClassLoader().getResource("cartoon-eyes.png"));
 				
 			    hello = new JLabel("Hello user Please Enter your Number ");
 			   hello.setHorizontalAlignment(JLabel.CENTER);
@@ -206,7 +206,7 @@ public void run() {
 			}
 			else if(count >= 1) {
 				
-				ImageIcon an = new ImageIcon("angry.png");
+				ImageIcon an = new ImageIcon(getClass().getClassLoader().getResource("angry.png"));
 				hello.setIcon(an);
 				hello.setText("Wrong number");
 				hello.setVisible(true);

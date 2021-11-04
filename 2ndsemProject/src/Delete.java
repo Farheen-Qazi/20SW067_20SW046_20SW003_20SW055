@@ -72,7 +72,7 @@ public class Delete extends Thread implements ActionListener{
 		
 		center_bottom.setPreferredSize(new Dimension(70,70));
 		
-		ImageIcon img = new ImageIcon("sr.png");
+		ImageIcon img = new ImageIcon(getClass().getClassLoader().getResource("sr.png"));
 		
 		btn = new JButton(img);
 		btn.setText("Search");
@@ -148,7 +148,7 @@ public class Delete extends Thread implements ActionListener{
 			    uisouth.add(cancel);
 			    uisouth.setVisible(false);
 		     
-			    eye = new ImageIcon("cartoon-eyes.png");
+			    eye = new ImageIcon(getClass().getClassLoader().getResource("cartoon-eyes.png"));
 				
 			    hello = new JLabel("Hello user Please Enter your Number ");
 			   hello.setHorizontalAlignment(JLabel.CENTER);
@@ -211,7 +211,7 @@ public class Delete extends Thread implements ActionListener{
 			}
 			else if(count >= 1) {
 				
-				ImageIcon an = new ImageIcon("angry.png");
+				ImageIcon an = new ImageIcon(getClass().getClassLoader().getResource("angry.png"));
 				hello.setIcon(an);
 				hello.setText("Wrong number");
 				hello.setVisible(true);
