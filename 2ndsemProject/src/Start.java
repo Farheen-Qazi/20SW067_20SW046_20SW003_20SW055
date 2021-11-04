@@ -134,7 +134,7 @@ public class Start extends MouseAdapter implements ActionListener{
 		east = new JPanel();
 		west = new JPanel();
 		south = new JPanel();
-		JLabel rights = new JLabel("copyrights@ 2021 || AZTech Squad");
+		JLabel rights = new JLabel("copyrights@ 2021 || Shahzad Haider");
 		rights.setForeground(Color.white);
 		rights.setFont(new Font(Font.SANS_SERIF,Font.BOLD,20));
 		east.setPreferredSize(new Dimension(100,100));
