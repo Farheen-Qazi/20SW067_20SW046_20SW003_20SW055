@@ -57,6 +57,7 @@ public class CarGame extends Thread implements MouseListener {
 
     JFrame f = new JFrame("My Game");
     JPanel f2 = new JPanel();
+<<<<<<< HEAD
     JLabel background1 = new JLabel(new ImageIcon(getClass().getClassLoader().getResource("images/bg1.jpg")));
     JLabel background2 = new JLabel(new ImageIcon(getClass().getClassLoader().getResource("images/bg2.jpg")));
     JLabel background3 = new JLabel(new ImageIcon(getClass().getClassLoader().getResource("images/bg3.jpg")));
@@ -64,6 +65,15 @@ public class CarGame extends Thread implements MouseListener {
     JLabel bg2 = new JLabel(new ImageIcon(getClass().getClassLoader().getResource("images/track.jpg")));
     JLabel bg3 = new JLabel(new ImageIcon(getClass().getClassLoader().getResource("images/track.jpg")));
     JLabel fire = new JLabel(new ImageIcon(getClass().getClassLoader().getResource("images/fire.gif")));
+=======
+    JLabel background1 = new JLabel(new ImageIcon("images/bg1.jpg"));
+    JLabel background2 = new JLabel(new ImageIcon("images/bg2.jpg"));
+    JLabel background3 = new JLabel(new ImageIcon("images/bg3.jpg"));
+    JLabel bg1 = new JLabel(new ImageIcon("images/track.jpg"));
+    JLabel bg2 = new JLabel(new ImageIcon("images/track.jpg"));
+    JLabel bg3 = new JLabel(new ImageIcon("images/track.jpg"));
+    JLabel fire = new JLabel(new ImageIcon("images/fire.gif"));
+>>>>>>> 23ff496212c2c37465c50299e5fac5e7745a1edd
     JLabel CHorn1 = new JLabel();
     JLabel CHorn2 = new JLabel();
     JButton about = new JButton("About");
@@ -78,6 +88,7 @@ public class CarGame extends Thread implements MouseListener {
     JLabel welcome = new JLabel("Welcome:");
     JButton changename = new JButton("change name");
     JButton changesensor = new JButton("modify sensor");
+<<<<<<< HEAD
     JLabel car1 = new JLabel(new ImageIcon(getClass().getClassLoader().getResource("images/car1.gif")));
     JLabel car2 = new JLabel(new ImageIcon(getClass().getClassLoader().getResource("images/car2.gif")));
     JLabel car3 = new JLabel(new ImageIcon(getClass().getClassLoader().getResource("images/car3.gif")));
@@ -95,6 +106,25 @@ public class CarGame extends Thread implements MouseListener {
     JButton s6 = new JButton(new ImageIcon(getClass().getClassLoader().getResource("images/car6.gif")));
     JButton s7 = new JButton(new ImageIcon(getClass().getClassLoader().getResource("images/car7.gif")));
     JButton s8 = new JButton(new ImageIcon(getClass().getClassLoader().getResource("images/car8.gif")));
+=======
+    JLabel car1 = new JLabel(new ImageIcon("images/car1.gif"));
+    JLabel car2 = new JLabel(new ImageIcon("images/car2.gif"));
+    JLabel car3 = new JLabel(new ImageIcon("images/car3.gif"));
+    JLabel car4 = new JLabel(new ImageIcon("images/car4.gif"));
+    JLabel car5 = new JLabel(new ImageIcon("images/car5.gif"));
+    JLabel car6 = new JLabel(new ImageIcon("images/car6.gif"));
+    JLabel car7 = new JLabel(new ImageIcon("images/car7.gif"));
+    JLabel car8 = new JLabel(new ImageIcon("images/car8.gif"));
+    JLabel getready = new JLabel("");
+    JButton s1 = new JButton(new ImageIcon("images/car1.gif"));
+    JButton s2 = new JButton(new ImageIcon("images/car2.gif"));
+    JButton s3 = new JButton(new ImageIcon("images/car3.gif"));
+    JButton s4 = new JButton(new ImageIcon("images/car4.gif"));
+    JButton s5 = new JButton(new ImageIcon("images/car5.gif"));
+    JButton s6 = new JButton(new ImageIcon("images/car6.gif"));
+    JButton s7 = new JButton(new ImageIcon("images/car7.gif"));
+    JButton s8 = new JButton(new ImageIcon("images/car8.gif"));
+>>>>>>> 23ff496212c2c37465c50299e5fac5e7745a1edd
     JButton cs = new JButton("Select Car");
     JLabel s13 = new JLabel("No Car Selected");
     JButton test = new JButton("Play");
@@ -284,6 +314,7 @@ public class CarGame extends Thread implements MouseListener {
                 if (y3 >= 770)
                     y3 = -1536;
                 if (Score < 2000 || Score == 6000) {
+<<<<<<< HEAD
                     background1.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/bg1.jpg")));
                     background2.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/bg1.jpg")));
                     background3.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/bg1.jpg")));
@@ -296,6 +327,20 @@ public class CarGame extends Thread implements MouseListener {
                     background1.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/bg3.jpg")));
                     background2.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/bg3.jpg")));
                     background3.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/bg3.jpg")));
+=======
+                    background1.setIcon(new ImageIcon("images/bg1.jpg"));
+                    background2.setIcon(new ImageIcon("images/bg1.jpg"));
+                    background3.setIcon(new ImageIcon("images/bg1.jpg"));
+
+                } else if (Score == 2000 || Score == 8000) {
+                    background1.setIcon(new ImageIcon("images/bg2.jpg"));
+                    background2.setIcon(new ImageIcon("images/bg2.jpg"));
+                    background3.setIcon(new ImageIcon("images/bg2.jpg"));
+                } else if (Score == 4000 || Score == 10000) {
+                    background1.setIcon(new ImageIcon("images/bg3.jpg"));
+                    background2.setIcon(new ImageIcon("images/bg3.jpg"));
+                    background3.setIcon(new ImageIcon("images/bg3.jpg"));
+>>>>>>> 23ff496212c2c37465c50299e5fac5e7745a1edd
                 }
 
             }
@@ -345,6 +390,7 @@ public class CarGame extends Thread implements MouseListener {
         f.add(changesensor);
         changename.addMouseListener(this);
         s13.setFont(new Font("arial", Font.BOLD, 12));
+<<<<<<< HEAD
         fire.setSize(new ImageIcon(getClass().getClassLoader().getResource("images/fire.gif")).getIconWidth(),
                 (new ImageIcon(getClass().getClassLoader().getResource("images/fire.gif"))).getIconHeight());
         car1.setSize(new ImageIcon(getClass().getClassLoader().getResource("images/car1.gif")).getIconWidth(),
@@ -371,6 +417,34 @@ public class CarGame extends Thread implements MouseListener {
         s6.setSize(new ImageIcon(getClass().getClassLoader().getResource("images/car6.gif")).getIconWidth(), (new ImageIcon(getClass().getClassLoader().getResource("images/car6.gif"))).getIconHeight());
         s7.setSize(new ImageIcon(getClass().getClassLoader().getResource("images/car7.gif")).getIconWidth(), (new ImageIcon(getClass().getClassLoader().getResource("images/car7.gif"))).getIconHeight());
         s8.setSize(new ImageIcon(getClass().getClassLoader().getResource("images/car8.gif")).getIconWidth(), (new ImageIcon(getClass().getClassLoader().getResource("images/car8.gif"))).getIconHeight());
+=======
+        fire.setSize(new ImageIcon("images/fire.gif").getIconWidth(),
+                (new ImageIcon("images/fire.gif")).getIconHeight());
+        car1.setSize(new ImageIcon("images/car1.gif").getIconWidth(),
+                (new ImageIcon("images/car1.gif")).getIconHeight());
+        car2.setSize(new ImageIcon("images/car2.gif").getIconWidth(),
+                (new ImageIcon("images/car2.gif")).getIconHeight());
+        car3.setSize(new ImageIcon("images/car3.gif").getIconWidth(),
+                (new ImageIcon("images/car3.gif")).getIconHeight());
+        car4.setSize(new ImageIcon("images/car4.gif").getIconWidth(),
+                (new ImageIcon("images/car4.gif")).getIconHeight());
+        car5.setSize(new ImageIcon("images/car5.gif").getIconWidth(),
+                (new ImageIcon("images/car5.gif")).getIconHeight());
+        car6.setSize(new ImageIcon("images/car6.gif").getIconWidth(),
+                (new ImageIcon("images/car6.gif")).getIconHeight());
+        car7.setSize(new ImageIcon("images/car7.gif").getIconWidth(),
+                (new ImageIcon("images/car7.gif")).getIconHeight());
+        car8.setSize(new ImageIcon("images/car8.gif").getIconWidth(),
+                (new ImageIcon("images/car8.gif")).getIconHeight());
+        s1.setSize(new ImageIcon("images/car1.gif").getIconWidth(), (new ImageIcon("images/car1.gif")).getIconHeight());
+        s2.setSize(new ImageIcon("images/car2.gif").getIconWidth(), (new ImageIcon("images/car2.gif")).getIconHeight());
+        s3.setSize(new ImageIcon("images/car3.gif").getIconWidth(), (new ImageIcon("images/car3.gif")).getIconHeight());
+        s4.setSize(new ImageIcon("images/car4.gif").getIconWidth(), (new ImageIcon("images/car4.gif")).getIconHeight());
+        s5.setSize(new ImageIcon("images/car5.gif").getIconWidth(), (new ImageIcon("images/car5.gif")).getIconHeight());
+        s6.setSize(new ImageIcon("images/car6.gif").getIconWidth(), (new ImageIcon("images/car6.gif")).getIconHeight());
+        s7.setSize(new ImageIcon("images/car7.gif").getIconWidth(), (new ImageIcon("images/car7.gif")).getIconHeight());
+        s8.setSize(new ImageIcon("images/car8.gif").getIconWidth(), (new ImageIcon("images/car8.gif")).getIconHeight());
+>>>>>>> 23ff496212c2c37465c50299e5fac5e7745a1edd
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setLayout(null);
         left.addMouseListener(this);
@@ -682,6 +756,7 @@ public class CarGame extends Thread implements MouseListener {
 
         switch (ijk) {
         case 2:
+<<<<<<< HEAD
             hero.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/car2.gif")));
             hero.setSize(new ImageIcon(getClass().getClassLoader().getResource("images/car2.gif")).getIconWidth(),
                     (new ImageIcon(getClass().getClassLoader().getResource("images/car2.gif"))).getIconHeight());
@@ -721,13 +796,60 @@ public class CarGame extends Thread implements MouseListener {
             hero.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/car8.gif")));
             hero.setSize(new ImageIcon(getClass().getClassLoader().getResource("images/car8.gif")).getIconWidth(),
                     (new ImageIcon(getClass().getClassLoader().getResource("images/car8.gif"))).getIconHeight());
+=======
+            hero.setIcon(new ImageIcon("images/car2.gif"));
+            hero.setSize(new ImageIcon("images/car2.gif").getIconWidth(),
+                    (new ImageIcon("images/car2.gif")).getIconHeight());
+            SELECTED = true;
+            break;
+        case 3:
+            hero.setIcon(new ImageIcon("images/car3.gif"));
+            hero.setSize(new ImageIcon("images/car3.gif").getIconWidth(),
+                    (new ImageIcon("images/car3.gif")).getIconHeight());
+            SELECTED = true;
+            break;
+        case 4:
+            hero.setIcon(new ImageIcon("images/car4.gif"));
+            hero.setSize(new ImageIcon("images/car4.gif").getIconWidth(),
+                    (new ImageIcon("images/car4.gif")).getIconHeight());
+            SELECTED = true;
+            break;
+        case 5:
+            hero.setIcon(new ImageIcon("images/car5.gif"));
+            hero.setSize(new ImageIcon("images/car5.gif").getIconWidth(),
+                    (new ImageIcon("images/car5.gif")).getIconHeight());
+            SELECTED = true;
+            break;
+        case 6:
+            hero.setIcon(new ImageIcon("images/car6.gif"));
+            hero.setSize(new ImageIcon("images/car6.gif").getIconWidth(),
+                    (new ImageIcon("images/car6.gif")).getIconHeight());
+            SELECTED = true;
+            break;
+        case 7:
+            hero.setIcon(new ImageIcon("images/car7.gif"));
+            hero.setSize(new ImageIcon("images/car7.gif").getIconWidth(),
+                    (new ImageIcon("images/car7.gif")).getIconHeight());
+            SELECTED = true;
+            break;
+        case 8:
+            hero.setIcon(new ImageIcon("images/car8.gif"));
+            hero.setSize(new ImageIcon("images/car8.gif").getIconWidth(),
+                    (new ImageIcon("images/car8.gif")).getIconHeight());
+>>>>>>> 23ff496212c2c37465c50299e5fac5e7745a1edd
             SELECTED = true;
             break;
         case 1:
         default:
+<<<<<<< HEAD
             hero.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/car1.gif")));
             hero.setSize(new ImageIcon(getClass().getClassLoader().getResource("images/car1.gif")).getIconWidth(),
                     (new ImageIcon(getClass().getClassLoader().getResource("images/car1.gif"))).getIconHeight());
+=======
+            hero.setIcon(new ImageIcon("images/car1.gif"));
+            hero.setSize(new ImageIcon("images/car1.gif").getIconWidth(),
+                    (new ImageIcon("images/car1.gif")).getIconHeight());
+>>>>>>> 23ff496212c2c37465c50299e5fac5e7745a1edd
             SELECTED = true;
             break;
         }
