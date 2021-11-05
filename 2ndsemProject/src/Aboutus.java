@@ -34,7 +34,7 @@ public class Aboutus extends MouseAdapter implements ActionListener{
 	   public Aboutus() {
 			
 		//code for the userportal box starts	
-	    ImageIcon u = new ImageIcon("user.png");
+	    ImageIcon u = new ImageIcon(getClass().getClassLoader().getResource("user.png"));
 		item1 = new JLabel(u);
 		item1.setLayout(new BorderLayout());
 		item1.setText("Shahzad Haider");
@@ -62,7 +62,7 @@ public class Aboutus extends MouseAdapter implements ActionListener{
 		
 		
 		//code for admin box starts 
-	    ImageIcon c = new ImageIcon("user.png");
+	    ImageIcon c = new ImageIcon(getClass().getClassLoader().getResource("user.png"));
 	   
 		item2 = new JLabel(c);
 	    item2.setText("Zameer Ali");
@@ -92,7 +92,7 @@ public class Aboutus extends MouseAdapter implements ActionListener{
 		
 		
 		    //code for game box starts
-		    ImageIcon p = new ImageIcon("user.png");
+		    ImageIcon p = new ImageIcon(getClass().getClassLoader().getResource("user.png"));
 			item3 = new JLabel(p);
 			item3.setLayout(new BorderLayout());
 			item3.setText("Zaid Ahmed");
@@ -117,7 +117,7 @@ public class Aboutus extends MouseAdapter implements ActionListener{
 			  
 			  
 			  //about box starts
-			    ImageIcon a = new ImageIcon("user.png");
+			    ImageIcon a = new ImageIcon(getClass().getClassLoader().getResource("user.png"));
 				item4 = new JLabel(a);
 				item4.setLayout(new BorderLayout());
 				item4.setText("Farheen Qazi");
