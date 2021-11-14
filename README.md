@@ -1,4 +1,3 @@
-# Train_Managment_System
+# 20SW067_20SW046_20SW003_20SW055
 
-Hi fellas this is 2nd second semester project developed by the students of MUET jamshoro 
-which is purely developed by using java as a primary language .
+Train Management (OOP Second Semester Project MUET-20-SW Batch)
